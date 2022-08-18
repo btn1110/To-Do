@@ -7,6 +7,9 @@ const ToDoForm = ({ todos, setTodos, todoList, setTodoList }) => {
   };
   const todoSubmitHandler = (e) => {
     e.preventDefault();
+    if (todos.trim().length === 0) {
+      return;
+    }
     setTodoList([
       ...todoList,
       {
