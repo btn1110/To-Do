@@ -1,3 +1,5 @@
+import style from "./TodoListItem.module.css";
+
 const TodoListItem = ({ todoList, setTodoList }) => {
   const todoDeleteHandler = (e) => {
     const { id: targetId } = e.target.parentElement;
@@ -11,9 +13,18 @@ const TodoListItem = ({ todoList, setTodoList }) => {
     <ul>
       {todoList.map((todo) => {
         return (
-          <li key={todo.id} id={todo.id}>
+          <li
+            key={todo.id}
+            id={todo.id}
+            className={`font-family ${style.list}`}
+          >
             {todo.text}
-            <button onClick={todoDeleteHandler}>x</button>
+            <button
+              onClick={todoDeleteHandler}
+              className={`font-family ${style.button}`}
+            >
+              delete
+            </button>
           </li>
         );
       })}

@@ -1,6 +1,8 @@
+import style from "./Quotes.module.css";
+
 const Quotes = ({ quotes }) => {
   return (
-    <section>
+    <section className={`font-family ${style.quotes}`}>
       <div>
         <p>{quotes.content}</p>
       </div>

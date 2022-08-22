@@ -1,0 +1,23 @@
+.input {
+  padding: 4px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.inValid {
+  border: 2px solid;
+  border-color: red;
+}
+
+.button {
+  padding: 4px;
+  border: none;
+  font-size: large;
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: teal;
+}

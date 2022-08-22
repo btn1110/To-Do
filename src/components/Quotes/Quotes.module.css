@@ -1,0 +1,16 @@
+.quotes {
+  padding: 5px;
+}
+
+.quotes p {
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.quotes span {
+  font-style: italic;
+  font-size: 15px;
+}

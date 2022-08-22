@@ -30,14 +30,16 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <Quotes quotes={quotes} />
-      <ToDoForm
-        todos={todos}
-        setTodos={setTodos}
-        todoList={todoList}
-        setTodoList={setTodoList}
-      />
-      <TodoList todoList={todoList} setTodoList={setTodoList} todos={todos} />
+      <main>
+        <Quotes quotes={quotes} />
+        <ToDoForm
+          todos={todos}
+          setTodos={setTodos}
+          todoList={todoList}
+          setTodoList={setTodoList}
+        />
+        <TodoList todoList={todoList} setTodoList={setTodoList} todos={todos} />
+      </main>
     </Fragment>
   );
 }
